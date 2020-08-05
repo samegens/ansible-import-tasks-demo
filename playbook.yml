@@ -1,0 +1,7 @@
+---
+- hosts: local
+  tasks:
+    - command: cat lines
+      register: cat_result
+      
+    - import_tasks: include.yml
